@@ -6,7 +6,6 @@ import numpy as np
 import pandas as pd 
 import pickle
 
-from pyrsistent import b
 
 # Load the pickle files generated 
 
