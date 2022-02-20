@@ -64,6 +64,7 @@ def recommend():
     # Get the username 
     username = str(request.form.get('username'))
     print(username)
+    username = username.lower()
 
     # recommend top5 products for that user
     try:
