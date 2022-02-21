@@ -6,17 +6,33 @@
     Welcome to Item Recommendation System
 </title>
 
-<body align="center" style="background-color:cyan">
+<body align="center" style="background-color:#BDB76B">
 
 <form align="center" action="{{ url_for('recommend')}}" method="post">
-<h2><font color="red" face="Verdana"><b>WELCOME TO EBUSS RECOMMENDATION SYSTEM</b> </font></h2>
-<br><br><br>
-<h3><font color="green" face="Verdana"> Enter the Username </font> </h3> <br>
+<h2><font color="#191970" face="Verdana"><b>WELCOME TO EBUSS RECOMMENDATION SYSTEM</b> </font></h2>
+
+<h3 align="left" color="#191970"><u>ABOUT US</u></h3>
+
+<p align="'left" color="green"> Ebuss is one of the leading e-commerce websites. We have captured a huge market share in many fields, 
+and it sells the products in various categories such as household essentials, books, personal 
+care products, medicines, cosmetic items, beauty products, electrical appliances, 
+kitchen and dining products and health care products.</p>
+
+ <h3 align="left" color="#191970"><u>ABOUT OUR RECOMMENDATION UTILITY</u></h3>
+ 
+ <p align="'left" color="green">Our aim is to build a model that will improve the recommendations
+given to the users given their past reviews and ratings.</p>
+
+ <p> <b> The below utility gives you an overview of our Recommendation System. <br>
+Please enter username and we would suggest you the top 5 products which 
+a person would be interested in.</b> </p>
+
+<h3><font color="#1E90FF" face="Verdana"> Enter the Username </font> </h3>
 <input type="text" name="username" placeholder="Enter the name of the user" required="required">
 <br><br>
 <button align="center" type="submit">Get top 5 recommendations</button>
 <br><br>
-<pre> <font color = "maroon", family = "Comic Sans MS">{{items_list}}</font></pre>
+<pre><b> <font color = "maroon", family = "Comic Sans MS">{{items_list}}</font></b></pre>
 </form>
 
 </body>
