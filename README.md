@@ -20,7 +20,10 @@ Files Used :
 2. model.py - This consists of end-to-end code used by flask application for the heroku deployment. This consists of a single best ML model - Logistic Regression and single best recommendation system - User based model to get the top 5 recommendations for a user. Pickle files are generated and loaded so that they can be used directly in the app.py file. 
 3. app.py - This file consists of code which connects the backend model to the frontend html page. 
 4. models/* - This folder consists of all the pickle files generated during the model creation and the recommendation system creation. These pickle files are used by our app.py file to get the recommendations. 
-5. templates/* - This folder contains index.html file which is a front-end HTML page for submitting the user input and displaying the top 5 recommendations. 
-
+5. templates/* - This folder contains index.html file which is a front-end HTML page for submitting the user input and displaying the top 5 recommendations.
+6. ratings_df.csv - The final dataframe file which has bee converted to a csv file after the whole cleaning, analysis and processing is done. This file is used in the app.py to read few items from the dataframe. 
+7. Procfile - This file is used by the Heroku application
+8. requirements.txt - This file is used by the Heroku application to install the reqired libraries and packages on the Heroku cloud application.
+9. sample30.csv - This is the original data file which we converted to dataframe in the initial step of the data reading.
 
 ### App is deployed in Heroku and is available at : https://sbprs-sirisha.herokuapp.com/ 
