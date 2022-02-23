@@ -14,3 +14,13 @@ In order to do this, you planned to build a sentiment-based product recommendati
 2. Building a recommendation system
 3. Improving the recommendations using the sentiment analysis model
 4. Deploying the end-to-end project with a user interface
+
+Files Used : 
+1. SBPRS_Sirisha.ipynb - This is the whole code which consists of all the ML models used for prediction of the sentiment. The models we have used are - Logistic Regression model with SMOTE (to correct the class imbalance), Multinomial Naive Bayes with SMOTE, XGBoost with SMOTE and RandomForest Classifier with SMOTE. 
+2. model.py - This consists of end-to-end code used by flask application for the heroku deployment. This consists of a single best ML model - Logistic Regression and single best recommendation system - User based model to get the top 5 recommendations for a user. Pickle files are generated and loaded so that they can be used directly in the app.py file. 
+3. app.py - This file consists of code which connects the backend model to the frontend html page. 
+4. models/* - This folder consists of all the pickle files generated during the model creation and the recommendation system creation. These pickle files are used by our app.py file to get the recommendations. 
+5. templates/* - This folder contains index.html file which is a front-end HTML page for submitting the user input and displaying the top 5 recommendations. 
+
+
+### App is deployed in Heroku and is available at : https://sbprs-sirisha.herokuapp.com/ 
