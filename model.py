@@ -470,17 +470,17 @@ print(rmse)
 # Saving the models in .pkl formats
 
 # dump the logistic regression to lr_model.pkl file
-pickle.dump(lr_model,open('lr_model.pkl', 'wb'))
+pickle.dump(lr_model,open('models/lr_model.pkl', 'wb'))
 # load the lr_model  pickle object
-lr_model_obj =  pickle.load(open('lr_model_1.pkl', 'rb'))
+lr_model_obj =  pickle.load(open('models/lr_model.pkl', 'rb'))
 # dump the tfidf vectorizer to tfidf_model file 
-pickle.dump(tfidf,open('tfidf.pkl','wb'))
+pickle.dump(tfidf,open('models/tfidf.pkl','wb'))
 # load the tfidf pickle object
-tfidf_obj = pickle.load(open('tfidf.pkl','rb'))
+tfidf_obj = pickle.load(open('models/tfidf.pkl','rb'))
 # dump the pickle file for user_final_rating 
-pickle.dump(user_final_rating, open('final_ratings.pkl', 'wb'))
+pickle.dump(user_final_rating, open('models/final_ratings.pkl', 'wb'))
 # load the pickle object for user_final_rating
-final_ratings = pickle.load(open('final_ratings.pkl', 'rb'))
+final_ratings = pickle.load(open('models/final_ratings.pkl', 'rb'))
 
 
 # top 5 recommendations for a user

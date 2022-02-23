@@ -9,9 +9,9 @@ import pickle
 
 # Load the pickle files generated 
 
-final_ratings = pd.read_pickle('final_ratings.pkl')
-lr_model_obj = pd.read_pickle('lr_model.pkl')
-tfidf_obj = pd.read_pickle('tfidf.pkl')
+final_ratings = pd.read_pickle('models/final_ratings.pkl')
+lr_model_obj = pd.read_pickle('models/lr_model.pkl')
+tfidf_obj = pd.read_pickle('models/tfidf.pkl')
 
 # Load the final dataframe which was saves as rating_df.csv
 df = pd.read_csv('ratings_df.csv')
