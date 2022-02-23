@@ -10,7 +10,7 @@ As a senior ML Engineer, you are asked to build a model that will improve the re
 
 In order to do this, you planned to build a sentiment-based product recommendation system, which includes the following tasks.
 
-Data sourcing and sentiment analysis
-Building a recommendation system
-Improving the recommendations using the sentiment analysis model
-Deploying the end-to-end project with a user interface
+1. Data sourcing and sentiment analysis
+2. Building a recommendation system
+3. Improving the recommendations using the sentiment analysis model
+4. Deploying the end-to-end project with a user interface
