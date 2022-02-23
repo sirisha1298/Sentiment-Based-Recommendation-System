@@ -497,7 +497,8 @@ df.to_csv("ratings_df.csv",index=False)
 
 ### Flask code is available in "app.py" 
 ### HTML code is available in "templates/index.html"
-### App is deployed in Heroku and is available at :" https://sbprs-sirisha.herokuapp.com/ "
+### App is deployed in Heroku and is available at : https://sbprs-sirisha.herokuapp.com/ 
+### Github link is available at :  https://github.com/sirisha1298/Sentiment-Based-Recommendation-System 
 
 #############################################################################################
 
